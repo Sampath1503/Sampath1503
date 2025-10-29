@@ -1,48 +1,106 @@
-<!-- Banner -->
-<p align="center">
-  <img src="https://i.imgur.com/2AuvJkN.jpeg" width="100%" alt="banner">
-</p>
+<!-- GitHub Profile Cinematic README -->
 
-<h1 align="center">👋 Hey, I'm <strong>Sampath Kumar Panthagani</strong></h1>
-<h3 align="center">Data Science | Machine Learning | Visualization</h3>
+<div align="center">
 
----
+# **SAMPATH KUMAR PANTHAGANI**
 
-### 🚀 About Me
-- I build systems that analyze data, predict behavior, and support decision-making.
-- I enjoy solving real-world problems with clean logic and (sometimes) dirty coffee ☕
-- Currently exploring Generative AI & ML-powered recommendation systems.
-- Always improving, one project at a time.
+**Data Science • Machine Learning • AI**
 
 ---
 
-### 🧠 Skills & Tools
-**Languages:** Python, SQL  
-**Machine Learning:** Scikit-Learn, XGBoost, LightGBM  
-**Data Wrangling:** Pandas, NumPy  
-**Visualization:** Matplotlib, Seaborn, Plotly  
-**Deployment:** Streamlit, Flask  
-**Others:** Git, Jupyter, MLOps basics  
+### *"Turning raw data into real business decisions."*
+
+</div>
 
 ---
 
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SampathKumarPanthagani&show_icons=true&theme=tokyonight" height="160px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SampathKumarPanthagani&layout=compact&theme=tokyonight" height="160px"/>
-</p>
+## 🧠 **About Me**
+
+Driven Data Scientist passionate about designing intelligent systems that deliver insight, automation, and measurable value. I focus on practical, impactful machine learning and data storytelling.
+
+* 🎯 Interested in **Predictive Modelling & Business Analytics**
+* 💻 Building **data applications** with Streamlit
+* 📊 Experience with **Telecom Churn** & **CO₂ Emission** prediction workflows
+* 🌍 Always learning, always improving
 
 ---
 
-### 🔥 Streak
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=SampathKumarPanthagani&theme=tokyonight" />
-</p>
+## 🚀 **Tech Stack**
+
+<div align="center">
+
+| **Skill**      | **Badges**                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Programming    | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python\&logoColor=white)                                                                                 |
+| Data Libraries | ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas\&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy\&logoColor=white) |
+| ML Frameworks  | ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn\&logoColor=white)                                                              |
+| Databases      | ![SQL](https://img.shields.io/badge/SQL-003B57?logo=postgresql\&logoColor=white)                                                                                   |
+| App Dev        | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit\&logoColor=white)                                                                        |
+| BI Tools       | ![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi\&logoColor=black)                                                                           |
+
+</div>
+
+---------|-------|
+| Programming | Python |
+| Data & Analysis | Pandas, NumPy, Scikit‑Learn |
+| Databases | SQL |
+| App Building | Streamlit |
+| Visualization | Power BI |
 
 ---
 
-### 🌐 Connect With Me
-<p align="left">
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge"/></a>
-<a href="#"><img src="https://img.shields.io/badge/GitHub-Follow-black?logo=github&style=for-the-badge"/></a>
-</p>
+## 📌 **Featured Projects**
+
+<div align="center">
+
+### 🔹 **Telecom Churn Prediction**
+
+```
+Business Goal: Reduce customer churn and increase retention.
+Skills Used: Python, Pandas, Scikit-Learn, Streamlit
+Outcome: Built a predictive model with high recall for churners.
+```
+
+---
+
+### 🔹 **CO₂ Emission Analysis**
+
+```
+Goal: Identify emission trends and key contributing sectors.
+Skills Used: Python, Pandas, Visualization
+Outcome: Insight-driven reporting to support decision-making.
+```
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![Sampath's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sampath1503\&show_icons=true\&theme=tokyonight\&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Sampath1503\&layout=compact\&theme=tokyonight\&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Sampath1503\&theme=tokyonight\&hide_border=true)
+
+</div>
+
+---
+
+## 🌐 **Connect With Me**
+
+| Platform  | Link                     |
+| --------- | ------------------------ |
+| GitHub    | `github.com/Sampath1503` |
+| LinkedIn  | *Coming Soon*            |
+| Portfolio | *Coming Soon*            |
+
+---
+
+<div align="center">
+
+✨ *“Data is only valuable when it drives decisions.”* ✨
+
+</div>

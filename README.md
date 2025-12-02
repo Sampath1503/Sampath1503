@@ -40,7 +40,7 @@ Driven Data Scientist passionate about designing intelligent systems that delive
 
 </div>
 
----------|-------|
+---
 | Programming | Python |
 | Data & Analysis | Pandas, NumPy, Scikit‑Learn |
 | Databases | SQL |

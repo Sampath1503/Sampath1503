@@ -39,14 +39,6 @@ Driven Data Scientist passionate about designing intelligent systems that delive
 | BI Tools       | ![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi\&logoColor=black)                                                                           |
 
 </div>
-
----
-| Programming | Python |
-| Data & Analysis | Pandas, NumPy, Scikit‑Learn |
-| Databases | SQL |
-| App Building | Streamlit |
-| Visualization | Power BI |
-
 ---
 
 ## 📌 **Featured Projects**

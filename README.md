@@ -73,6 +73,8 @@ Outcome: Insight-driven reporting to support decision-making.
 
 | Platform  | Link                     |
 | --------- | ------------------------ |
+| Mobile    | `9676105753`             |
+| Gmail     | `sampath967610@gmail.com`|
 | GitHub    | `github.com/Sampath1503` |
 | LinkedIn  | `www.linkedin.com/in/sampath-kumar-panthagani-2147a6250` |
 

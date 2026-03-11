@@ -1,87 +1,147 @@
-<!-- GitHub Profile Cinematic README -->
-
 <div align="center">
 
-# **SAMPATH KUMAR PANTHAGANI**
+# Sampath Kumar Panthagani
 
-**Data Science • Machine Learning • AI**
+Data Scientist | Machine Learning | Data Systems
 
----
-
-### *"Turning raw data into real business decisions."*
+[LinkedIn](https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250) • 
+[GitHub](https://github.com/Sampath1503)
 
 </div>
 
 ---
 
-## 🧠 **About Me**
+## About Me
 
-Driven Data Scientist passionate about designing intelligent systems that deliver insight, automation, and measurable value. I focus on practical, impactful machine learning and data storytelling.
+Data Scientist with hands-on experience building machine learning models and data analytics systems across telecom and e-commerce domains.
 
-* 🎯 Interested in **Predictive Modelling & Business Analytics**
-* 💻 Building **data applications** with Streamlit
-* 📊 Experience with **Telecom Churn** & **CO₂ Emission** prediction workflows
-* 🌍 Always learning, always improving
+My work focuses on turning raw behavioral data into actionable business insights using machine learning, feature engineering, and analytical dashboards.
 
----
+Current interests:
 
-## 🚀 **Tech Stack**
-
-<div align="center">
-
-| **Skill**      | **Badges**                                                                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Programming    | ![Python](https://img.shields.io/badge/Python-3776AB?logo=python\&logoColor=white)                                                                                 |
-| Data Libraries | ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas\&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy\&logoColor=white) |
-| ML Frameworks  | ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn\&logoColor=white)                                                              |
-| Databases      | ![SQL](https://img.shields.io/badge/SQL-003B57?logo=postgresql\&logoColor=white)                                                                                   |
-| App Dev        | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit\&logoColor=white)                                                                        |
-| BI Tools       | ![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi\&logoColor=black)                                                                           |
-
-</div>
----
-
-## 📌 **Featured Projects**
-
-<div align="center">
-
-### 🔹 **Telecom Churn Prediction**
-
-```
-Business Goal: Reduce customer churn and increase retention.
-Skills Used: Python, Pandas, Scikit-Learn, Streamlit
-Outcome: Built a predictive model with high recall for churners.
-```
+- Customer analytics and churn prediction
+- Predictive modeling and business decision support
+- Building data applications and ML tools
+- Designing data science practice platforms
 
 ---
 
-### 🔹 **CO₂ Emission Analysis**
+## Technical Skills
 
-```
-Goal: Identify emission trends and key contributing sectors.
-Skills Used: Python, Pandas, Visualization
-Outcome: Insight-driven reporting to support decision-making.
-```
+**Programming**
 
-</div>
+Python, SQL
+
+**Data Analysis**
+
+Pandas, NumPy, Exploratory Data Analysis (EDA)
+
+**Machine Learning**
+
+Scikit-learn  
+XGBoost  
+Logistic Regression  
+Random Forest  
+K-Means
+
+**Visualization**
+
+Power BI  
+Tableau  
+Matplotlib
+
+**Tools**
+
+Git  
+Streamlit
 
 ---
 
+# Featured Projects
 
+## Telecom Churn Prediction System
 
-## 🌐 **Connect With Me**
+Repository:  
+https://github.com/Sampath1503/telecom-churn-prediction-ml-automation
 
-| Platform  | Link                     |
-| --------- | ------------------------ |
-| Mobile    | `9676105753`             |
-| Gmail     | `sampath967610@gmail.com`|
-| GitHub    | `github.com/Sampath1503` |
-| LinkedIn  | `www.linkedin.com/in/sampath-kumar-panthagani-2147a6250` |
+Machine learning system designed to identify customers likely to leave telecom services.
+
+Key highlights
+
+- Feature engineering from telecom behavioral data
+- XGBoost model with class imbalance handling using SMOTETomek
+- Achieved high recall for churn detection
+- Interactive prediction interface using Streamlit
+- Power BI dashboards for churn analysis
+
+Technologies used
+
+Python  
+Pandas  
+Scikit-learn  
+Streamlit  
+Power BI
 
 ---
 
-<div align="center">
+## Customer Analytics – E-commerce
 
-✨ *“Data is only valuable when it drives decisions.”* ✨
+Repository:  
+https://github.com/Sampath1503/customer-analytics-portfolio-e-commerce
 
-</div>
+Customer analytics project analyzing transactional behavior and churn risk.
+
+Key highlights
+
+- Behavioral feature engineering from transactional data
+- Logistic regression churn prediction model
+- Customer segmentation analysis
+- Visualization of key customer metrics
+
+Technologies used
+
+Python  
+Pandas  
+Scikit-learn  
+Power BI
+
+---
+
+## DS-Forge (Data Science Practice Platform) – In Development
+
+LeetCode-style platform for practicing data science problems on real datasets.
+
+Current capabilities
+
+- Python coding challenges
+- SQL query problems
+- Pandas dataframe transformation tasks
+- FastAPI backend for submission evaluation
+- Dataset exploration APIs
+- Leaderboard system
+
+Goal
+
+Create a platform where users can practice **real-world data science interview problems** using datasets.
+
+---
+
+# Education
+
+M.Sc. Computational Data Science  
+Acharya Nagarjuna University
+
+B.Sc. Statistics (MSCS)
+
+---
+
+# Connect
+
+Email: sampath967610@gmail.com  
+Phone: +91 9676105753  
+
+LinkedIn  
+https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250
+
+GitHub  
+https://github.com/Sampath1503

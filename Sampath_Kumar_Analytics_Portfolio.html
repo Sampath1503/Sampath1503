@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Portfolio - Sampath Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #222;
+            background: white;
+            font-size: 10.5pt;
+        }
+
+        .page {
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto 20px;
+            padding: 0.6in;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+
+        .page:last-child {
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-bottom: 0.1in;
+        }
+
+        .title {
+            font-size: 11pt;
+            color: #666;
+            margin-bottom: 0.2in;
+        }
+
+        .contact {
+            font-size: 9pt;
+            color: #777;
+            margin-bottom: 0.25in;
+            line-height: 1.3;
+        }
+
+        .contact a {
+            color: #003d7a;
+            text-decoration: none;
+        }
+
+        .section-header {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-top: 0.2in;
+            margin-bottom: 0.1in;
+            border-bottom: 1pt solid #ddd;
+            padding-bottom: 0.05in;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.15in;
+            margin-bottom: 0.15in;
+        }
+
+        .skill-col {
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+
+        .skill-col strong {
+            color: #003d7a;
+            font-weight: 600;
+        }
+
+        .project {
+            margin-bottom: 0.25in;
+            border-left: 3pt solid #003d7a;
+            padding-left: 0.15in;
+        }
+
+        .project-title {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-bottom: 0.05in;
+        }
+
+        .project-meta {
+            font-size: 8.5pt;
+            color: #777;
+            margin-bottom: 0.05in;
+        }
+
+        .project-desc {
+            font-size: 9pt;
+            line-height: 1.4;
+            margin-bottom: 0.05in;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.1in;
+            margin: 0.1in 0;
+            background: #f8f8f8;
+            padding: 0.1in;
+            font-size: 8.5pt;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-val {
+            font-weight: 600;
+            color: #003d7a;
+            font-size: 9pt;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 8pt;
+        }
+
+        .tools {
+            font-size: 9pt;
+            margin: 0.05in 0;
+            color: #555;
+        }
+
+        .tools strong {
+            color: #003d7a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.1in 0;
+            font-size: 8.5pt;
+        }
+
+        table th {
+            background: #003d7a;
+            color: white;
+            padding: 0.08in 0.1in;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 0.06in 0.1in;
+            border-bottom: 1pt solid #e0e0e0;
+        }
+
+        .footer {
+            margin-top: 0.2in;
+            padding-top: 0.1in;
+            border-top: 1pt solid #ddd;
+            font-size: 8pt;
+            color: #999;
+            text-align: center;
+        }
+
+        .links {
+            font-size: 9pt;
+            margin-top: 0.1in;
+            line-height: 1.4;
+        }
+
+        .links a {
+            color: #003d7a;
+            text-decoration: none;
+        }
+
+        .links strong {
+            color: #003d7a;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                background: white;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER + SKILLS + PROJECT 1 -->
+<div class="page">
+    <h1>Sampath Kumar Panthagani</h1>
+    <div class="title">Data Analyst | Python | SQL | Machine Learning</div>
+    
+    <div class="contact">
+        Hyderabad, India | sampath967610@gmail.com | +91 9676105753<br>
+        GitHub: <a href="https://github.com/Sampath1503">github.com/Sampath1503</a> | 
+        LinkedIn: <a href="https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250">linkedin.com/in/sampath-kumar-panthagani</a>
+    </div>
+
+    <div class="section-header">TECHNICAL SKILLS</div>
+    <div class="skills-container">
+        <div class="skill-col">
+            <strong>Languages:</strong> Python, SQL<br>
+            <strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, XGBoost<br>
+            <strong>Visualization:</strong> Power BI, Streamlit
+        </div>
+        <div class="skill-col">
+            <strong>ML Techniques:</strong> Classification, Regression, Feature Engineering<br>
+            <strong>Analytics:</strong> EDA, Statistical Analysis, Customer Segmentation<br>
+            <strong>Tools:</strong> Jupyter, Git, Windows automation
+        </div>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="section-header">PROJECTS</div>
+    
+    <div class="project">
+        <div class="project-title">Customer Analytics – E-Commerce Churn & CLV</div>
+        <div class="project-meta">Problem: E-commerce business losing revenue on low-value retention spend | Tools: Python, Scikit-learn, Lifetimes, Power BI</div>
+        
+        <div class="project-desc">
+            <strong>Solution:</strong> Built three-tier analytics system combining churn prediction, customer lifetime value forecasting, and revenue-at-risk quantification. Identified 33% of customers contributing 88% of revenue; flagged high-value customers at risk of churn.
+        </div>
+
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-val">98%</div>
+                <div class="metric-label">Accuracy</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">87%</div>
+                <div class="metric-label">Recall</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">₹197K</div>
+                <div class="metric-label">Revenue at Risk</div>
+            </div>
+        </div>
+
+        <div class="tools">
+            <strong>Output:</strong> Churn probability scores + CLV predictions + Executive dashboards
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/Sampath1503/customer-analytics-portfolio-e-commerce">GitHub</a> | 
+            <a href="https://customer-analytics-portfolio-e-commerce.streamlit.app/">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- PROJECT 2 START -->
+    <div class="project">
+        <div class="project-title">Telecom Churn Prediction – ML Automation Pipeline</div>
+        <div class="project-meta">Problem: Manual churn reporting delays intervention window | Tools: XGBoost, SMOTETomek, SQL, Power BI, Python automation</div>
+        
+        <div class="project-desc">
+            <strong>Solution:</strong> Production ML pipeline with automated daily churn scoring. XGBoost model trained on 10K customers with class imbalance handling. Outputs risk segmentation (Low/Medium/High) integrated into Power BI dashboards.
+        </div>
+
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-val">98%</div>
+                <div class="metric-label">Accuracy</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">87%</div>
+                <div class="metric-label">Recall</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">10K+</div>
+                <div class="metric-label">Customers</div>
+            </div>
+        </div>
+
+        <div class="tools">
+            <strong>Output:</strong> Automated batch predictions + Risk segmentation framework + BI integration
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/Sampath1503/telecom-churn-prediction-ml-automation">GitHub</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        PAGE 1 OF 2 | Sampath Kumar Analytics Portfolio | May 2026
+    </div>
+</div>
+
+<!-- PAGE 2: PROJECTS + EDUCATION + LINKS -->
+<div class="page">
+    <h1 style="font-size: 14pt; margin-bottom: 0.1in;">Sampath Kumar Panthagani</h1>
+    <div style="font-size: 9pt; color: #777; margin-bottom: 0.2in;">Page 2 – Projects & Credentials</div>
+
+    <!-- PROJECT 3 -->
+    <div class="section-header">PROJECTS (CONTINUED)</div>
+    
+    <div class="project">
+        <div class="project-title">E-Commerce Recommender System – Hybrid Engine</div>
+        <div class="project-meta">Problem: Cold-start recommendations + sparse collaborative data | Tools: Scikit-learn, TF-IDF, Pandas, Streamlit</div>
+        
+        <div class="project-desc">
+            <strong>Solution:</strong> Hybrid recommendation engine combining content-based (TF-IDF) and collaborative filtering with adaptive blending. Cold users weighted toward content; warm users weighted toward collaborative signals. Leave-one-out evaluation on 300 users, 500 products.
+        </div>
+
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-val">16.7%</div>
+                <div class="metric-label">Hit@5</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">24.0%</div>
+                <div class="metric-label">Hit@10</div>
+            </div>
+            <div class="metric">
+                <div class="metric-val">3.3x</div>
+                <div class="metric-label">vs Single Engine</div>
+            </div>
+        </div>
+
+        <div class="tools">
+            <strong>Output:</strong> Ranked product recommendations + Streamlit interface + Adaptive alpha blending
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/Sampath1503/ecommerce-recommender">GitHub</a>
+        </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section-header">EDUCATION</div>
+    <div style="font-size: 9pt; line-height: 1.5; margin-bottom: 0.15in;">
+        <strong>M.Sc. Computational Data Science</strong> – Acharya Nagarjuna University (80%)<br>
+        <strong>B.Sc. Statistics (MSCS)</strong> – Vijaya Jyothi Degree College (70%)<br>
+        <strong>Certifications:</strong> Data Science (ExcelR), Data Science Internship (AiVariant)
+    </div>
+
+    <!-- KEY RESULTS -->
+    <div class="section-header">KEY ACHIEVEMENTS</div>
+    <div style="font-size: 9pt; line-height: 1.5;">
+        3 production ML systems deployed and running<br>
+        ₹197K revenue exposure identified and quantified<br>
+        98% model accuracy across 2 predictive systems<br>
+        Automated batch scoring pipeline operational<br>
+        All projects on GitHub with live demos
+    </div>
+
+    <!-- CONTACT & LINKS -->
+    <div class="section-header">PORTFOLIO LINKS</div>
+    <div class="links">
+        <strong>GitHub:</strong> <a href="https://github.com/Sampath1503">github.com/Sampath1503</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250">linkedin.com/in/sampath-kumar-panthagani-2147a6250</a><br>
+        <strong>Email:</strong> <a href="mailto:sampath967610@gmail.com">sampath967610@gmail.com</a><br>
+        <strong>Phone:</strong> +91 9676105753
+    </div>
+
+    <div style="margin-top: 0.2in; padding-top: 0.15in; border-top: 1pt solid #ddd; font-size: 8.5pt; line-height: 1.4;">
+        <strong>Project Summary:</strong><br>
+        1. Customer Analytics: Churn + CLV system (98% accuracy, ₹197K revenue at risk identified)<br>
+        2. Telecom ML: Automated batch churn pipeline (10K customers, 87% recall)<br>
+        3. Recommender: Hybrid engine (3.3x accuracy vs baseline)
+    </div>
+
+    <div class="footer">
+        PAGE 2 OF 2 | sampath967610@gmail.com | github.com/Sampath1503 | May 2026
+    </div>
+</div>
+
+</body>
+</html>

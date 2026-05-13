@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Portfolio - Sampath Kumar Panthagani</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #fff;
+            font-size: 11pt;
+        }
+
+        .page {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            padding: 0.75in;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            page-break-after: always;
+            page-break-inside: avoid;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 24pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-bottom: 0.25in;
+            letter-spacing: 0.5pt;
+        }
+
+        h2 {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-top: 0.3in;
+            margin-bottom: 0.15in;
+            border-bottom: 2pt solid #e0e0e0;
+            padding-bottom: 0.1in;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 0.2in;
+            margin-bottom: 0.1in;
+        }
+
+        p {
+            margin-bottom: 0.1in;
+            text-align: justify;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 11in;
+            padding: 1in;
+        }
+
+        .cover-page h1 {
+            font-size: 32pt;
+            margin-bottom: 0.3in;
+        }
+
+        .cover-page .subtitle {
+            font-size: 16pt;
+            color: #666;
+            margin-bottom: 1in;
+            font-weight: 500;
+        }
+
+        .cover-page .divider {
+            width: 3in;
+            height: 2pt;
+            background-color: #003d7a;
+            margin: 0.5in auto;
+        }
+
+        .cover-page .summary {
+            text-align: left;
+            margin: 1in 0;
+            font-size: 11pt;
+            line-height: 1.8;
+            max-width: 5.5in;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cover-page .contact-info {
+            margin-top: 1in;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+
+        .contact-info div {
+            margin: 0.1in 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #003d7a;
+        }
+
+        /* Content Sections */
+        .section {
+            margin-bottom: 0.3in;
+        }
+
+        .section-intro {
+            font-size: 10pt;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 0.15in;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.2in;
+            margin-bottom: 0.2in;
+        }
+
+        .skill-category {
+            background-color: #f5f5f5;
+            padding: 0.15in;
+            border-left: 3pt solid #003d7a;
+            font-size: 10pt;
+        }
+
+        .skill-category h4 {
+            font-weight: 600;
+            color: #003d7a;
+            font-size: 10pt;
+            margin-bottom: 0.08in;
+        }
+
+        .skill-category p {
+            margin: 0;
+            line-height: 1.4;
+            font-size: 9.5pt;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 0.4in;
+            border-left: 4pt solid #003d7a;
+            padding-left: 0.2in;
+        }
+
+        .project-title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #003d7a;
+            margin-bottom: 0.08in;
+        }
+
+        .project-subtitle {
+            font-size: 9.5pt;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.08in;
+        }
+
+        .project-content {
+            font-size: 9.5pt;
+            line-height: 1.5;
+            margin-bottom: 0.1in;
+        }
+
+        .metric-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.1in;
+            background-color: #f9f9f9;
+            padding: 0.15in;
+            margin: 0.1in 0;
+            font-size: 9pt;
+        }
+
+        .metric {
+            border-right: 1pt solid #ddd;
+            padding-right: 0.1in;
+            text-align: center;
+        }
+
+        .metric:last-child {
+            border-right: none;
+        }
+
+        .metric-value {
+            font-weight: 600;
+            color: #003d7a;
+            font-size: 10pt;
+        }
+
+        .metric-label {
+            color: #666;
+            font-size: 8.5pt;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.1in 0;
+            font-size: 9pt;
+        }
+
+        table th {
+            background-color: #003d7a;
+            color: white;
+            padding: 0.08in;
+            text-align: left;
+            font-weight: 600;
+            border: 1pt solid #003d7a;
+        }
+
+        table td {
+            padding: 0.08in;
+            border: 1pt solid #e0e0e0;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Links */
+        a {
+            color: #003d7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Education & Certifications */
+        .edu-item {
+            margin-bottom: 0.15in;
+            padding-bottom: 0.1in;
+            border-bottom: 1pt solid #e0e0e0;
+        }
+
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            color: #003d7a;
+            font-size: 10pt;
+        }
+
+        .edu-institution {
+            font-size: 9.5pt;
+            color: #666;
+        }
+
+        .edu-grade {
+            font-size: 9pt;
+            color: #888;
+        }
+
+        /* Competencies */
+        .competency-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.1in;
+            font-size: 9.5pt;
+            margin-bottom: 0.15in;
+        }
+
+        .competency-item {
+            background-color: #f9f9f9;
+            padding: 0.08in 0.12in;
+            border-left: 2pt solid #003d7a;
+        }
+
+        .checkmark {
+            color: #003d7a;
+            font-weight: 600;
+            margin-right: 0.05in;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 0.4in;
+            padding-top: 0.15in;
+            border-top: 1pt solid #e0e0e0;
+            font-size: 8.5pt;
+            color: #666;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 0.75in;
+                page-break-after: always;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .page {
+                max-width: 100%;
+            }
+        }
+
+        .banner {
+            background-color: #f5f5f5;
+            padding: 0.2in;
+            margin-bottom: 0.2in;
+            border-left: 3pt solid #003d7a;
+        }
+
+        .impact-statement {
+            background-color: #f0f4f8;
+            padding: 0.15in;
+            margin: 0.15in 0;
+            border-left: 3pt solid #003d7a;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER PAGE -->
+<div class="page cover-page">
+    <h1>ANALYTICS PORTFOLIO</h1>
+    <p class="subtitle">Data Analyst | Customer Analytics | Machine Learning</p>
+    
+    <div class="divider"></div>
+
+    <div class="summary">
+        <p><strong>Results-driven Data Analyst</strong> with demonstrated expertise in building end-to-end analytics solutions, predictive modeling, and business intelligence platforms. Proven ability to translate complex behavioral data into actionable business insights that drive revenue protection and customer retention strategies.</p>
+        
+        <p style="margin-top: 0.3in;"><strong>Key Capabilities:</strong></p>
+        <p>• Production-ready ML pipelines (Python, XGBoost, Scikit-learn)<br>
+        • Advanced analytics and data visualization (Power BI, Streamlit)<br>
+        • Revenue-focused analytics with quantifiable business impact<br>
+        • SQL-based ETL and feature engineering<br>
+        • Automated batch prediction and risk segmentation<br>
+        • Consulting-style business problem solving</p>
+    </div>
+
+    <div class="contact-info">
+        <div><span class="contact-label">Location:</span> Hyderabad, India</div>
+        <div><span class="contact-label">Email:</span> sampath967610@gmail.com</div>
+        <div><span class="contact-label">Phone:</span> +91 9676105753</div>
+        <div><span class="contact-label">GitHub:</span> <a href="https://github.com/Sampath1503">github.com/Sampath1503</a></div>
+        <div><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250">linkedin.com/in/sampath-kumar-panthagani</a></div>
+    </div>
+
+    <div class="footer">
+        <strong>Professional Analytics Portfolio • ATS-Optimized • Consulting-Ready</strong>
+    </div>
+</div>
+
+<!-- PAGE 2: TECHNICAL SKILLS -->
+<div class="page">
+    <h2>TECHNICAL SKILLS</h2>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h4>📊 Programming & Data</h4>
+            <p><strong>Python</strong> (Advanced)<br>
+            • Pandas, NumPy, Scikit-learn<br>
+            • XGBoost, imblearn<br>
+            • Data pipelines & ETL<br>
+            <strong>SQL</strong> (Intermediate)<br>
+            • Data querying & aggregation<br>
+            • Window functions, CTEs<br>
+            • Feature engineering</p>
+        </div>
+
+        <div class="skill-category">
+            <h4>🤖 Machine Learning</h4>
+            <p><strong>Supervised Learning</strong><br>
+            • Classification (Logistic Regression, XGBoost)<br>
+            • Regression analysis<br>
+            • Ensemble methods<br>
+            <strong>Advanced Techniques</strong><br>
+            • SMOTETomek for class imbalance<br>
+            • Probabilistic modeling<br>
+            • Hyperparameter optimization</p>
+        </div>
+
+        <div class="skill-category">
+            <h4>📈 Business Intelligence</h4>
+            <p><strong>Visualization</strong><br>
+            • Power BI (advanced)<br>
+            • Streamlit web applications<br>
+            • Executive dashboards<br>
+            <strong>Analytics</strong><br>
+            • Data storytelling<br>
+            • KPI definition & tracking<br>
+            • Business metrics</p>
+        </div>
+
+        <div class="skill-category">
+            <h4>📊 Analytics Domains</h4>
+            <p><strong>Customer Analytics</strong><br>
+            • Churn prediction<br>
+            • CLV forecasting<br>
+            • RFM segmentation<br>
+            <strong>Advanced Analytics</strong><br>
+            • Revenue-at-risk modeling<br>
+            • Cohort analysis<br>
+            • Behavioral segmentation</p>
+        </div>
+    </div>
+
+    <h2>CORE COMPETENCIES</h2>
+    <div class="competency-list">
+        <div class="competency-item"><span class="checkmark">✓</span> Exploratory Data Analysis</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Feature Engineering</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Predictive Modeling</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Statistical Analysis</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Business Problem Solving</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Stakeholder Communication</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Data Visualization</div>
+        <div class="competency-item"><span class="checkmark">✓</span> ROI Calculation</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Dashboard Development</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Automated Pipelines</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Production ML Systems</div>
+        <div class="competency-item"><span class="checkmark">✓</span> Risk Segmentation</div>
+    </div>
+
+    <div class="footer">
+        <strong>Proficiency Levels:</strong> Advanced (Python, Power BI, ML) • Intermediate (SQL, Feature Engineering) • Specialist (Customer Analytics)
+    </div>
+</div>
+
+<!-- PAGE 3: PROJECT 1 - CUSTOMER ANALYTICS -->
+<div class="page">
+    <h2>PROJECT 1: Customer Analytics Portfolio – E-Commerce</h2>
+    <p class="section-intro">Business Impact: ₹197K Revenue at Risk Identified | 98% Churn Prediction Accuracy | Revenue Concentration Analysis</p>
+
+    <h3>Business Objective</h3>
+    <p>Develop integrated customer analytics system to identify revenue exposure, protect high-value customers, and optimize retention spending through data-driven prioritization.</p>
+
+    <h3>Problem Statement</h3>
+    <p>E-commerce businesses struggle to allocate limited retention budgets efficiently. Without understanding revenue concentration and churn risk interaction, companies overspend on low-impact customers while under-protecting high-value segments.</p>
+
+    <h3>Solution Architecture</h3>
+    <p><strong>Three-Tier Analytics Framework:</strong></p>
+    <div class="impact-statement">
+        <strong>1. Churn Risk Prediction</strong> — Identified customers likely to disengage within 90-day window using Logistic Regression on behavioral features (recency, purchase velocity, customer lifetime, return behavior).<br>
+        <br>
+        <strong>2. Customer Lifetime Value (CLV)</strong> — Predicted 6-month CLV using probabilistic models (BG/NBD + Gamma-Gamma), revealing 33% of customers contribute 88% of revenue.<br>
+        <br>
+        <strong>3. Revenue-at-Risk Intelligence</strong> — Combined churn probability with CLV to quantify financial exposure: Revenue at Risk = Churn Probability × CLV (6 months)
+    </div>
+
+    <h3>Key Results & Metrics</h3>
+    <div class="metric-box">
+        <div class="metric">
+            <div class="metric-value">98%</div>
+            <div class="metric-label">Churn Accuracy</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">87%</div>
+            <div class="metric-label">Churn Recall</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">₹197K</div>
+            <div class="metric-label">Revenue at Risk</div>
+        </div>
+    </div>
+
+    <div class="metric-box">
+        <div class="metric">
+            <div class="metric-value">33%</div>
+            <div class="metric-label">High-Value Segment</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">88%</div>
+            <div class="metric-label">Revenue from 33%</div>
+        </div>
+        <div class="metric">
+            <div class="metric-value">4,300+</div>
+            <div class="metric-label">Customers Analyzed</div>
+        </div>
+    </div>
+
+    <h3>Tools & Technologies</h3>
+    <p><strong>Data Processing:</strong> Python (Pandas, NumPy) • SQL aggregation • Feature engineering<br>
+    <strong>Modeling:</strong> Scikit-learn (Logistic Regression) • Lifetimes library (BG/NBD, Gamma-Gamma)<br>
+    <strong>Visualization:</strong> Power BI dashboards • Streamlit interactive app<br>
+    <strong>Infrastructure:</strong> Git version control • Jupyter notebooks</p>
+
+    <h3>Business Impact</h3>
+    <ul style="margin-left: 0.2in;">
+        <li>✓ Enables targeted retention campaigns, reducing waste by 60%+ through revenue-focused targeting</li>
+        <li>✓ Provides quantifiable ₹197K revenue protection strategy for executive alignment</li>
+        <li>✓ Actionable customer lists delivered to retention teams for immediate implementation</li>
+        <li>✓ Supports data-driven budget allocation and ROI optimization</li>
+    </ul>
+
+    <p style="font-size: 9pt; margin-top: 0.2in;"><strong>Repository:</strong> <a href="https://github.com/Sampath1503/customer-analytics-portfolio-e-commerce">github.com/Sampath1503/customer-analytics-portfolio-e-commerce</a><br>
+    <strong>Live Demo:</strong> <a href="https://customer-analytics-portfolio-e-commerce.streamlit.app/">Streamlit Application</a></p>
+</div>
+
+<!-- PAGE 4: PROJECT 2 - TELECOM ML AUTOMATION -->
+<div class="page">
+    <h2>PROJECT 2: Telecom Churn Prediction ML Automation</h2>
+    <p class="section-intro">Production ML Pipeline | Automated Batch Scoring | Risk Segmentation | 10,000 Customer Database</p>
+
+    <h3>Business Objective</h3>
+    <p>Build production-ready machine learning pipeline for daily churn prediction, enabling proactive retention campaigns through automated risk segmentation and operational BI integration.</p>
+
+    <h3>Solution Architecture</h3>
+    <div class="impact-statement">
+        <strong>End-to-End ML System featuring:</strong><br>
+        • SQL Server data sourcing with automated ETL<br>
+        • Advanced feature engineering (usage metrics, billing analysis, behavioral signals)<br>
+        • XGBoost with SMOTETomek for class imbalance handling<br>
+        • Automated batch inference with Windows Task Scheduler<br>
+        • Risk segmentation framework (Low/Medium/High)<br>
+        • Power BI operational dashboards
+    </div>
+
+    <h3>Model Performance</h3>
+    <table>
+        <tr>
+            <th>Metric</th>
+            <th>Value</th>
+            <th>Business Implication</th>
+        </tr>
+        <tr>
+            <td>Accuracy</td>
+            <td><strong>98%</strong></td>
+            <td>Reliable predictions for most customer segments</td>
+        </tr>
+        <tr>
+            <td>Recall (Churn)</td>
+            <td><strong>87%</strong></td>
+            <td>Catches 87% of actual churners for intervention</td>
+        </tr>
+        <tr>
+            <td>Precision (Churn)</td>
+            <td><strong>98%</strong></td>
+            <td>Low false positive rate, efficient campaign targeting</td>
+        </tr>
+        <tr>
+            <td>Customer Base</td>
+            <td><strong>~10,000</strong></td>
+            <td>Scalable to large customer populations</td>
+        </tr>
+    </table>
+
+    <h3>Risk Segmentation Framework</h3>
+    <table>
+        <tr>
+            <th>Risk Level</th>
+            <th>Probability Range</th>
+            <th>Recommended Action</th>
+        </tr>
+        <tr>
+            <td>Low Risk</td>
+            <td>&lt; 0.30</td>
+            <td>Monitor and maintain engagement</td>
+        </tr>
+        <tr>
+            <td>Medium Risk</td>
+            <td>0.30 – 0.70</td>
+            <td>Proactive outreach and targeted offers</td>
+        </tr>
+        <tr>
+            <td>High Risk</td>
+            <td>&gt; 0.70</td>
+            <td>Immediate retention intervention</td>
+        </tr>
+    </table>
+
+    <h3>Tools & Technologies</h3>
+    <p><strong>Data Engineering:</strong> SQL Server • CSV-based data pipelines<br>
+    <strong>ML Stack:</strong> Python • XGBoost • Scikit-learn • imblearn (SMOTETomek)<br>
+    <strong>Automation:</strong> Windows Task Scheduler • Structured logging<br>
+    <strong>BI & Reporting:</strong> Power BI executive dashboards</p>
+
+    <h3>Dashboard Components</h3>
+    <p><strong>Executive Overview:</strong> KPIs, churn rate, risk distribution<br>
+    <strong>Churn Driver Analysis:</strong> Feature importance, behavioral patterns<br>
+    <strong>Risk Monitoring:</strong> Real-time predictions, model performance tracking</p>
+
+    <p style="font-size: 9pt; margin-top: 0.2in;"><strong>Repository:</strong> <a href="https://github.com/Sampath1503/telecom-churn-prediction-ml-automation">github.com/Sampath1503/telecom-churn-prediction-ml-automation</a></p>
+</div>
+
+<!-- PAGE 5: PROJECT 3 - RECOMMENDER SYSTEM -->
+<div class="page">
+    <h2>PROJECT 3: E-Commerce Recommender System</h2>
+    <p class="section-intro">Hybrid Recommendation Engine | TF-IDF + Collaborative Filtering | 3.3× Accuracy Improvement</p>
+
+    <h3>Business Objective</h3>
+    <p>Develop hybrid recommendation engine balancing content-based precision with collaborative filtering diversity, optimizing for both accuracy and catalog coverage.</p>
+
+    <h3>Technical Architecture</h3>
+    <div class="impact-statement">
+        <strong>Adaptive Hybrid Engine combining:</strong><br>
+        • <strong>Content-Based:</strong> TF-IDF vectorization (1,535 terms) with cosine similarity<br>
+        • <strong>Collaborative Filtering:</strong> User-based and item-based approaches on sparse matrix<br>
+        • <strong>Adaptive Blending:</strong> Dynamic α adjustment based on user activity level<br>
+        • Cold users (few ratings): 85% content-heavy → Warm users (many ratings): 30% collaborative-heavy
+    </div>
+
+    <h3>Performance Comparison</h3>
+    <table>
+        <tr>
+            <th>Engine</th>
+            <th>Hit@5</th>
+            <th>Hit@10</th>
+            <th>Coverage</th>
+            <th>Diversity</th>
+        </tr>
+        <tr>
+            <td>Content-Based</td>
+            <td>2.7%</td>
+            <td>7.3%</td>
+            <td>77.4%</td>
+            <td>0.000</td>
+        </tr>
+        <tr>
+            <td>CF Item-Based</td>
+            <td>0.0%</td>
+            <td>0.0%</td>
+            <td>84.0%</td>
+            <td>0.792</td>
+        </tr>
+        <tr style="background-color: #f0f4f8; font-weight: 600;">
+            <td><strong>Hybrid Adaptive</strong></td>
+            <td><strong>16.7%</strong></td>
+            <td><strong>24.0%</strong></td>
+            <td><strong>83.4%</strong></td>
+            <td><strong>0.312</strong></td>
+        </tr>
+    </table>
+    <p style="font-size: 9pt; color: #666; margin-top: 0.1in;"><em>Hybrid_Adaptive wins on all accuracy metrics (3.3× improvement) while maintaining 98% personalization</em></p>
+
+    <h3>Dataset & Scale</h3>
+    <p><strong>Products:</strong> 500 items across 5 categories (Electronics, Clothing, Home, Books, Sports)<br>
+    <strong>Users:</strong> 300 active users with demographic data<br>
+    <strong>Interactions:</strong> 7,456 ratings (1-5 scale) with purchase indicators<br>
+    <strong>Sparsity:</strong> 95% sparse user-item matrix (typical e-commerce scenario)</p>
+
+    <h3>Key Features</h3>
+    <ul style="margin-left: 0.2in;">
+        <li>✓ Handles cold-start problem effectively through adaptive alpha</li>
+        <li>✓ Balances accuracy, coverage, and diversity for production deployment</li>
+        <li>✓ Mean-centered cosine similarity removes user rating bias</li>
+        <li>✓ Streamlit interface for real-time recommendations</li>
+    </ul>
+
+    <h3>Tools & Technologies</h3>
+    <p><strong>ML Libraries:</strong> Scikit-learn (TF-IDF, cosine similarity) • Pandas • NumPy<br>
+    <strong>Algorithms:</strong> Content-based filtering • User-based & item-based CF • Hybrid blending<br>
+    <strong>Deployment:</strong> Streamlit web application<br>
+    <strong>Evaluation:</strong> Leave-one-out cross-validation • Hit@K • NDCG metrics</p>
+
+    <p style="font-size: 9pt; margin-top: 0.2in;"><strong>Repository:</strong> <a href="https://github.com/Sampath1503/ecommerce-recommender">github.com/Sampath1503/ecommerce-recommender</a></p>
+</div>
+
+<!-- PAGE 6: EDUCATION & CREDENTIALS -->
+<div class="page">
+    <h2>EDUCATION</h2>
+
+    <div class="edu-item">
+        <div class="edu-degree">M.Sc. Computational Data Science</div>
+        <div class="edu-institution">Acharya Nagarjuna University</div>
+        <div class="edu-grade">Grade: 80% • Specialization: Data Science & Machine Learning</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-degree">B.Sc. Statistics (MSCS)</div>
+        <div class="edu-institution">Vijaya Jyothi Degree College</div>
+        <div class="edu-grade">Grade: 70% • Focus: Statistical Methods & Data Analysis</div>
+    </div>
+
+    <h2>PROFESSIONAL CERTIFICATIONS</h2>
+
+    <div class="edu-item">
+        <div class="edu-degree">Data Science Specialization Certificate</div>
+        <div class="edu-institution">ExcelR</div>
+        <div class="edu-grade">Curriculum: ML, Python, Statistical Analysis</div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-degree">Data Science Internship Completion</div>
+        <div class="edu-institution">AiVariant</div>
+        <div class="edu-grade">Hands-on project experience in production environments</div>
+    </div>
+
+    <h2>PROFESSIONAL COMPETENCIES SUMMARY</h2>
+
+    <h3>Analytics & Business Intelligence</h3>
+    <p>Business problem definition and solution design • Stakeholder communication and executive reporting • ROI calculation and business impact quantification • Data-driven decision support frameworks</p>
+
+    <h3>Data Science & Modeling</h3>
+    <p>End-to-end ML pipeline development • Exploratory data analysis and pattern recognition • Predictive and prescriptive analytics • Algorithm selection and hyperparameter tuning</p>
+
+    <h3>Software Engineering Practices</h3>
+    <p>Production-ready code development • Automated pipeline implementation • Version control and collaborative development • Documentation and knowledge transfer</p>
+
+    <h3>Domain Expertise</h3>
+    <p>Customer analytics and behavior analysis • Churn prediction and retention strategy • Revenue optimization and financial analysis • Telecom and e-commerce industry knowledge</p>
+
+    <h2>CAREER PROFILE</h2>
+    <div class="impact-statement">
+        <strong>Sought-After Capabilities for Consulting:</strong><br>
+        ✓ End-to-end project delivery from business problem to deployed solution<br>
+        ✓ Quantifiable business impact metrics (₹197K revenue protection identified)<br>
+        ✓ Production-grade ML systems with operational integration<br>
+        ✓ Executive-level communication with technical depth<br>
+        ✓ Proven experience in telecom and e-commerce analytics
+    </div>
+
+    <h2>CONTACT & PORTFOLIO LINKS</h2>
+
+    <p><strong>Email:</strong> <a href="mailto:sampath967610@gmail.com">sampath967610@gmail.com</a><br>
+    <strong>Phone:</strong> +91 9676105753<br>
+    <strong>GitHub:</strong> <a href="https://github.com/Sampath1503">github.com/Sampath1503</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sampath-kumar-panthagani-2147a6250">linkedin.com/in/sampath-kumar-panthagani</a></p>
+
+    <h3>Featured Projects</h3>
+    <p><strong>1.</strong> <a href="https://github.com/Sampath1503/customer-analytics-portfolio-e-commerce">Customer Analytics Portfolio</a><br>
+    <strong>2.</strong> <a href="https://github.com/Sampath1503/telecom-churn-prediction-ml-automation">Telecom Churn ML Automation</a><br>
+    <strong>3.</strong> <a href="https://github.com/Sampath1503/ecommerce-recommender">E-Commerce Recommender</a></p>
+
+    <div class="footer">
+        <strong>Professional Analytics Portfolio | Ready for Consulting & Enterprise Analytics Roles | PDF Date: May 2026</strong><br>
+        <em>This portfolio demonstrates commitment to data-driven problem solving, technical excellence, and measurable business impact.</em>
+    </div>
+</div>
+
+</body>
+</html>
